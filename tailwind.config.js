@@ -4,7 +4,7 @@ module.exports = {
     "./src/**/*.{html,js}", // Specify paths to your template files
   ],
   theme: {
-    extend: {}, // Extend default styles here
+    extend: {},
   },
   plugins: [], // Add plugins if needed
 };
