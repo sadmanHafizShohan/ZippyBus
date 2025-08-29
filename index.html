@@ -1,450 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZippyBus || Ride Easy. Book Fast</title>
-    <!-- daisy ui -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- tailwind css -->
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-  <body class="overflow-x-hidden">
-    <!-- Navbar Section start-->
-    <section class="mx-4 md:mx-10">
-      <div class="navbar flex justify-between gap-4">
-        <div class="navbar-start w-full md:w-auto">
-          <h1 class="text-xl lg:text-2xl "><span class="text-green-400 font-bold">Z</span>ippyBus</h1>
-        </div>
-        <div class="navbar-center hidden lg:flex gap-4">
-          <!-- ... existing content ... -->
-        </div>
-        <div class="navbar-end w-full md:w-auto">
-          <a
-            class="bg-green-100 border border-[#1DD10066] text-green-600 px-4 md:px-8 py-2 rounded-full font-semibold text-sm flex items-center gap-2 shadow-md cursor-pointer w-full md:w-auto justify-center"
-            href="#Sporibohon"
-          >
-            Book Fast
-            <span
-              ><img src="./images/bus-icon.png" alt="Bus icon" class="w-4 h-4"
-            /></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZippyBus || Ride Easy. Book Fast</title>
+  <!-- daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- aox animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- tailwind css -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+  <!-- Navbar Section start-->
+  <section data-aos="fade-down"
+    class="mx-4 md:mx-10 sticky top-2 bg-white/20 backdrop-blur-md border border-white/30 z-50 py-2 px-6 rounded-xl shadow-lg">
+    <div class="navbar flex justify-between gap-4">
+      <div class="navbar-start w-full md:w-auto">
+        <h1 class="text-xl lg:text-2xl "><span class="text-green-400 font-bold">Z</span>ippyBus</h1>
+      </div>
+      <div class="navbar-center hidden lg:flex gap-4">
+        <!-- ... existing content ... -->
+      </div>
+      <div class="navbar-end w-full md:w-auto animate__animated animate__pulse animate__infinite animate__slow">
+        <a class="bg-green-100 border border-[#1DD10066] text-green-600 px-4 md:px-8 py-2 rounded-full font-semibold text-sm flex items-center gap-2 shadow-md cursor-pointer w-full md:w-auto justify-center"
+          href="#Sporibohon">
+          Book Fast
+          <span><img src="./images/bus-icon.png" alt="Bus icon" class="w-4 h-4" /></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- navbar section end -->
+  <!-- Hero Section start-->
+  <section class="my-5 px-4 sm:px-6 lg:px-8">
+    <div
+      class="hero min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen rounded-xl bg-cover bg-center flex items-center justify-center text-center text-white"
+      style="background-image: url('./images/banner.png')">
+      <div class="bg-opacity-40 w-full h-full flex items-center justify-center p-4 sm:p-6 lg:p-10 rounded-xl">
+        <div class="max-w-xl text-white space-y-5">
+          <h1 data-aos="fade-up" class="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight">
+            Ride Easy. Book Fast with <br />
+            <span class="font-light"><span class="text-green-400 font-bold">Z</span>ippyBus</span>
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="300" class="text-sm sm:text-base">
+            <strong>Book your next bus ride in minutes!</strong> Find the best routes, compare prices, and reserve your
+            seat — all in one place. Whether you're traveling for work, a weekend getaway, or a family visit, we make
+            your journey easy, reliable, and affordable. Skip the lines, save time, and travel smart with hassle-free
+            online booking.
+          </p>
+          <a href="#Sporibohon"
+            class="inline-block text-white bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-bold transition duration-200">
+            Buy Tickets
           </a>
         </div>
       </div>
-    </section>
-    <!-- navbar section end -->
-    <!-- Hero Section start-->
-    <section class="my-5 px-4 sm:px-6 lg:px-8">
-      <div
-        class="hero min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen rounded-xl bg-cover bg-center flex items-center justify-center text-center text-white"
-        style="background-image: url('./images/banner.png')"
-      >
-        <div
-          class="bg-opacity-40 w-full h-full flex items-center justify-center p-4 sm:p-6 lg:p-10 rounded-xl"
-        >
-          <div class="max-w-xl text-white space-y-5">
-            <h1
-              class="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight"
-            >
-              Ride Easy. Book Fast with <br />
-              <span class="font-light"><span class="text-green-400 font-bold">Z</span>ippyBus</span>
-            </h1>
-            <p class="text-sm sm:text-base">
-              <strong>Book your next bus ride in minutes!</strong> Find the best routes, compare prices, and reserve your seat — all in one place. Whether you're traveling for work, a weekend getaway, or a family visit, we make your journey easy, reliable, and affordable. Skip the lines, save time, and travel smart with hassle-free online booking.
-            </p>
-            <a
-              href="#Sporibohon"
-              class="inline-block text-white bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-bold transition duration-200"
-            >
-              Buy Tickets
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- hero section end -->
-    <!-- Status section starts -->
-    <section
-      class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 lg:gap-10 mt-10 md:mt-[-60px] lg:mt-[-60px] px-4 md:px-10"
-    >
-      <!-- Status Box 1 -->
-      <div
-        class="flex justify-center shadow-lg items-center gap-3 p-4 md:p-5 bg-white border-b-4 border-green-500 rounded-lg  w-full md:w-auto"
-      >
-        <img src="./images/people.png" alt="" class="w-10 h-10" />
-        <div>
-          <p class="text-black font-bold text-xl md:text-2xl lg:text-3xl">
-            500K+
-          </p>
-          <p class="text-black font-light text-sm md:text-base lg:text-lg">
-            Registered Users
-          </p>
-        </div>
-      </div>
-
-      <!-- Status Box 2 -->
-      <div
-        class="flex justify-center shadow-lg items-center gap-3 p-4 md:p-5 bg-white border-b-4 border-green-500 rounded-lg w-full md:w-auto"
-      >
-        <img src="./images/ticket-cupon.png" alt="" class="w-10 h-10" />
-        <div>
-          <p class="text-black font-bold text-xl md:text-2xl lg:text-3xl">
-            1M+
-          </p>
-          <p class="text-black font-light text-sm md:text-base lg:text-lg">
-            Tickets Sold
-          </p>
-        </div>
-      </div>
-
-      <!-- Status Box 3 -->
-      <div
-        class="flex justify-center shadow-lg items-center gap-3 p-4 md:p-5 bg-white border-b-4 border-green-500 rounded-lg w-full md:w-auto"
-      >
-        <img src="./images/stoppage.png" alt="" class="w-10 h-10" />
-        <div>
-          <p class="text-black font-bold text-xl md:text-2xl lg:text-3xl">
-            120+
-          </p>
-          <p class="text-black font-light text-sm md:text-base lg:text-lg">
-            Routes Available
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- status section end -->
-    <!-- Offer Section starts-->
-    <section class="my-16 px-6 text-center">
-        <h3 class="text-3xl font-semibold mb-6">Best offers for you</h3>
-        <div class="flex flex-wrap justify-center gap-6">
-            <!-- 15% OFF Coupon -->
-            <div class="relative bg-yellow-400 text-black px-6 py-6 rounded-xl w-64 overflow-hidden">
-                <!-- Left divider -->
-                <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full"></div>
-                <!-- Right divider -->
-                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full"></div>
-                
-                <div class="flex justify-between items-start">
-                    <div class="text-left">
-                        <h4 class="text-2xl font-bold">15% OFF</h4>
-                        <p class="mt-2 text-sm font-semibold">on your next purchase</p>
-                        <p class="text-xs mt-1 opacity-75">use by January 2024</p>
-                    </div>
-                    <div class="text-right">
-                        <p class="text-xl font-bold">NEW15</p>
-                        <p class="text-xs opacity-75">Coupon Code</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 20% OFF Coupon -->
-            <div class="relative bg-pink-400 text-black px-6 py-6 rounded-xl w-64 overflow-hidden">
-                <!-- Left divider -->
-                <div class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full"></div>
-                <!-- Right divider -->
-                <div class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full"></div>
-                
-                <div class="flex justify-between items-start">
-                    <div class="text-left">
-                        <h4 class="text-2xl font-bold">20% OFF</h4>
-                        <p class="mt-2 text-sm font-semibold">on your next purchase</p>
-                        <p class="text-xs mt-1 opacity-75">use by January 2024</p>
-                    </div>
-                    <div class="text-right">
-                        <p class="text-xl font-bold">Couple 20</p>
-                        <p class="text-xs opacity-75">Coupon Code</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- See All Offers Button -->
-        <button class="mt-6 border border-green-500 text-green-600 px-4 py-2 rounded-full font-medium hover:bg-green-50 cursor-pointer">
-            See All Offers
-        </button>
-    </section>
-    <!-- Offer Section End -->
-    <!-- Full S-paribohon Section starts-->
-    <section
-      class="bg-[#F7F8F8] border-t-4 border-green-500 rounded-2xl shadow-lg overflow-hidden px-4 sm:px-6 lg:px-12 py-8"
-      id="Sporibohon"
-    >
-      <!-- Header -->
-      <div class="text-center my-10 sm:my-14">
-        
-        <h1
-          class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4"
-        >
-          <span class="text-green-400 font-bold">Z</span>ippyBus
-        </h1>
-        <p class="text-sm md:text-base text-gray-600 max-w-xl mx-auto">
-          all in one solution. Whether you're traveling for work, a weekend getaway, or a family visit.
+    </div>
+  </section>
+  <!-- hero section end -->
+  <!-- Status section starts -->
+  <section
+    class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 lg:gap-10 mt-10 md:mt-[-60px] lg:mt-[-60px] px-4 md:px-10">
+    <!-- Status Box 1 -->
+    <div data-aos="fade-up"
+      class="flex justify-center shadow-lg items-center gap-3 p-4 md:p-5 bg-white border-b-4 border-green-500 rounded-lg  w-full md:w-auto">
+      <img data-aos="zoom-in" src=" ./images/people.png" alt="" class="w-10 h-10" />
+      <div data-aos="zoom-in">
+        <p class="text-black font-bold text-xl md:text-2xl lg:text-3xl">
+          500K+
+        </p>
+        <p class="text-black font-light text-sm md:text-base lg:text-lg">
+          Registered Users
         </p>
       </div>
+    </div>
 
-      <!-- Bus Info Card -->
-      <div class="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-8">
+    <!-- Status Box 2 -->
+    <div data-aos="fade-up"
+      class=" flex justify-center shadow-lg items-center gap-3 p-4 md:p-5 bg-white border-b-4 border-green-500
+      rounded-lg w-full md:w-auto">
+      <img data-aos="zoom-in" src="./images/ticket-cupon.png" alt="" class="w-10 h-10" />
+      <div data-aos="zoom-in">
+        <p class="text-black font-bold text-xl md:text-2xl lg:text-3xl">
+          1M+
+        </p>
+        <p class="text-black font-light text-sm md:text-base lg:text-lg">
+          Tickets Sold
+        </p>
+      </div>
+    </div>
+
+    <!-- Status Box 3 -->
+    <div data-aos="fade-up" class=" flex justify-center shadow-lg items-center gap-3 p-4 md:p-5 bg-white border-b-4 border-green-500
+      rounded-lg w-full md:w-auto">
+      <img data-aos="zoom-in" src="./images/stoppage.png" alt="" class="w-10 h-10" />
+      <div data-aos="zoom-in">
+        <p class="text-black font-bold text-xl md:text-2xl lg:text-3xl">
+          120+
+        </p>
+        <p class="text-black font-light text-sm md:text-base lg:text-lg">
+          Routes Available
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- status section end -->
+  <!-- Offer Section starts-->
+  <section class="my-16 px-6 text-center">
+    <h3 class="text-3xl font-semibold mb-6">Best offers for you</h3>
+    <div class="flex flex-wrap justify-center gap-6">
+      <!-- 15% OFF Coupon -->
+      <div data-aos="fade-right" class="relative bg-yellow-400 text-black px-6 py-6 rounded-xl w-64 overflow-hidden">
+        <!-- Left divider -->
         <div
-          class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4"
-        >
-          <div class="flex items-center space-x-3">
-            <div
-              class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center"
-            >
-              <img src="./images/bus-logo.png" alt="bus-logo" />
-            </div>
-            <div>
-              <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
-                <span class="text-green-400 font-bold">Z</span>ippyBus
-              </h3>
-              <p class="text-sm text-gray-500">Coach-009-WEB | AC-Business</p>
-            </div>
-          </div>
-          <div
-            class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium text-center w-fit"
-          >
-            <span id="seatleft"></span> Seats left
-          </div>
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full">
         </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-          <div>
-            <p class="text-gray-500">Route</p>
-            <p class="font-medium">Dhaka - Sylhet</p>
-          </div>
-          <div>
-            <p class="text-gray-500">Departure Time</p>
-            <p class="font-medium">9:00 PM</p>
-          </div>
-          <div>
-            <p class="text-gray-500">Boarding Point</p>
-            <p class="font-medium">Lampur</p>
-            <p class="text-gray-500 mt-1">Dropping Point - Bogura</p>
-          </div>
-          <div class="text-right md:text-left">
-            <p class="text-gray-500">Est. Time - 11 Hour</p>
-            <div
-              class="mt-2 flex items-center justify-end md:justify-start gap-2"
-            >
-              <img src="./images/fare.png" alt="fare" class="w-6 h-6" />
-              <div>
-                <p class="font-bold text-lg">550 Taka</p>
-                <p class="text-gray-500 text-sm">Per Seat</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Seat Selection Section -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-        <!-- Left: Seat layout -->
-        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-          <h3 class="text-lg font-semibold mb-4">Select Your Seat</h3>
-
-          <!-- Legend -->
-          <div class="flex justify-between mb-4 text-sm">
-            <div class="flex items-center space-x-2">
-              <img src="./images/seat-gray.png" alt="" class="w-5 h-5" />
-              <span class="text-gray-600">Available</span>
-            </div>
-            <div class="flex items-center space-x-2">
-              <img
-                src="./images/seat-green-filled.png"
-                alt=""
-                class="w-5 h-5"
-              />
-              <span class="text-green-600">Selected</span>
-            </div>
-          </div>
-
-          <!-- Seat Grid -->
-          <div class="bg-gray-50 p-4 rounded-lg">
-            <div class="mb-4 flex justify-end">
-              <div
-                class="w-20 h-8 bg-gray-300 rounded-md flex items-center justify-center"
-              >
-                <img class="w-4 h-4" src="./images/wheel.png" alt="wheel" />
-              </div>
-            </div>
-            <div
-              class="grid grid-cols-4 gap-2 text-center text-sm"
-              id="seatGrid"
-            >
-              <!-- Seats will be injected by JS -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Summary -->
-        <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-          <div class="bg-gray-100 rounded-lg p-4 mb-6">
-            <table class="w-full text-sm">
-              <thead>
-                <tr>
-                  <th class="text-left py-2">Seat <img class="w-4 h-4 inline-block" src="./images/seat-gray.png" alt=""></th>
-                  <th class="text-left py-2">Class</th>
-                  <th class="text-right py-2">Price</th>
-                </tr>
-              </thead>
-              <tbody id="seatSummary">
-                <!-- JS inserts selected seats -->
-              </tbody>
-            </table>
-
-            <div class="mt-4 pt-4 border-t text-sm">
-              <div class="flex justify-between mb-2">
-                <p>Total Price</p>
-                <p>BDT <span id="total-price">0</span></p>
-              </div>
-
-              <div
-                class="bg-white rounded-xl text-center flex items-center p-2 mt-2"
-              >
-                <input
-                  class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none"
-                  type="text"
-                  placeholder="Have any coupon?"
-                />
-                <button
-                  class="bg-green-500 text-white px-4 py-2 rounded-r-full font-semibold hover:bg-green-600 transition"
-                >
-                  Apply
-                </button>
-              </div>
-
-              <div class="flex justify-between font-semibold mt-4">
-                <span>Grand Total</span>
-                <span id="grand-total">BDT 0</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Form -->
-          <div class="space-y-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1"
-                >Passenger Name*</label
-              >
-              <input
-                type="text"
-                placeholder="Enter your name"
-                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
-              />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1"
-                >Phone Number*</label
-              >
-              <input
-                id="phoneNumber"
-                type="tel"
-                placeholder="Enter your phone number"
-                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
-              />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1"
-                >Email ID</label
-              >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
-              />
-            </div>
-
-            <button
-              id="nextButton"
-              class="w-full text-white py-3 rounded-lg font-medium bg-green-600 cursor-not-allowed opacity-50"
-              disabled
-            >
-              Next
-            </button>
-
-            <div
-              class="flex justify-center space-x-4 text-xs text-gray-500 mt-2"
-            >
-              <a href="#" class="hover:text-green-600">Terms & Conditions</a>
-              <a href="#" class="hover:text-green-600">Cancellation Policy</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- full s paribohon section end -->
-    <!-- footer section start-->
-    <footer class="w-full bg-black text-white">
-      <div class="px-4 md:px-10 py-8 md:py-16 max-w-7xl mx-auto">
+        <!-- Right divider -->
         <div
-          class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8"
-        >
-          <!-- Left section -->
-          <div class="flex-1 max-w-full md:max-w-md">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4"><span class="text-green-400 font-bold">Z</span>ippyBus</h2>
-            <p class="text-gray-300 leading-relaxed text-sm md:text-base">
-              we make your journey easy, reliable, and affordable. Skip the lines, save time.
-            </p>
-          </div>
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full">
+        </div>
 
-          <!-- Right section -->
-          <div class="flex flex-col items-start lg:items-end w-full lg:w-auto">
-            <p class="text-gray-300 mb-4 ml-2">Download our app</p>
-            <a
-              href="#"
-              class="flex items-center border border-white rounded-lg hover:opacity-80 transition-opacity gap-4 mb-4 px-4 py-2 w-full md:w-auto justify-center md:justify-start"
-            >
-             <div>
-                <img
-                  src="./images/playstore.png"
-                  alt="Get it on Google Play"
-                  class="h-8 w-8"
-                />
-              </div>
-              <div>
-                <p class="text-xs">GET IT ON</p>
-                <h1 class="text-lg">Google Play</h1>
-              </div>
-            </a>
+        <div data-aos="fade-up" class="flex justify-between items-start">
+          <div class="text-left">
+            <h4 class="text-2xl font-bold">15% OFF</h4>
+            <p class="mt-2 text-sm font-semibold">on your next purchase</p>
+            <p class="text-xs mt-1 opacity-75">use by January 2024</p>
+          </div>
+          <div data-aos="fade-up" class="text-right">
+            <p class="text-xl font-bold">NEW15</p>
+            <p class="text-xs opacity-75">Coupon Code</p>
           </div>
         </div>
       </div>
 
-      <!-- Bottom section -->
+      <!-- 20% OFF Coupon -->
+      <div data-aos="fade-left" class="relative bg-pink-400 text-black px-6 py-6 rounded-xl w-64 overflow-hidden">
+        <!-- Left divider -->
+        <div
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full">
+        </div>
+        <!-- Right divider -->
+        <div
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-6 h-6 bg-gray-50 rounded-full">
+        </div>
+
+        <div data-aos="fade-up" class="flex justify-between items-start">
+          <div class="text-left">
+            <h4 class="text-2xl font-bold">20% OFF</h4>
+            <p class="mt-2 text-sm font-semibold">on your next purchase</p>
+            <p class="text-xs mt-1 opacity-75">use by January 2024</p>
+          </div>
+          <div data-aos="fade-up" class="text-right">
+            <p class="text-xl font-bold">Couple 20</p>
+            <p class="text-xs opacity-75">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- See All Offers Button -->
+    <button
+      class="mt-6 border border-green-500 text-green-600 px-4 py-2 rounded-full font-medium hover:bg-green-50 cursor-pointer">
+      See All Offers
+    </button>
+  </section>
+  <!-- Offer Section End -->
+  <!-- Full S-paribohon Section starts-->
+  <section
+    class="bg-[#F7F8F8] border-t-4 border-green-500 rounded-2xl shadow-lg overflow-hidden px-4 sm:px-6 lg:px-12 py-8"
+    id="Sporibohon">
+    <!-- Header -->
+    <div class="text-center my-10 sm:my-14">
+
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+        <span class="text-green-400 font-bold">Z</span>ippyBus
+      </h1>
+      <p class="text-sm md:text-base text-gray-600 max-w-xl mx-auto">
+        all in one solution. Whether you're traveling for work, a weekend getaway, or a family visit.
+      </p>
+    </div>
+
+    <!-- Bus Info Card -->
+    <div data-aos="zoom-in" class="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+            <img src="./images/bus-logo.png" alt="bus-logo" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
+              <span class="text-green-400 font-bold">Z</span>ippyBus
+            </h3>
+            <p class="text-sm text-gray-500">Coach-009-WEB | AC-Business</p>
+          </div>
+        </div>
+        <div class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium text-center w-fit">
+          <span id="seatleft"></span> Seats left
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <div>
+          <p class="text-gray-500">Route</p>
+          <p class="font-medium">Dhaka - Sylhet</p>
+        </div>
+        <div>
+          <p class="text-gray-500">Departure Time</p>
+          <p class="font-medium">9:00 PM</p>
+        </div>
+        <div>
+          <p class="text-gray-500">Boarding Point</p>
+          <p class="font-medium">Lampur</p>
+          <p class="text-gray-500 mt-1">Dropping Point - Bogura</p>
+        </div>
+        <div class="text-right md:text-left">
+          <p class="text-gray-500">Est. Time - 11 Hour</p>
+          <div class="mt-2 flex items-center justify-end md:justify-start gap-2">
+            <img src="./images/fare.png" alt="fare" class="w-6 h-6" />
+            <div>
+              <p class="font-bold text-lg">550 Taka</p>
+              <p class="text-gray-500 text-sm">Per Seat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seat Selection Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+      <!-- Left: Seat layout -->
+      <div data-aos="fade-right" class="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+        <h3 class="text-lg font-semibold mb-4">Select Your Seat</h3>
+
+        <!-- Legend -->
+        <div class="flex justify-between mb-4 text-sm">
+          <div class="flex items-center space-x-2">
+            <img src="./images/seat-gray.png" alt="" class="w-5 h-5" />
+            <span class="text-gray-600">Available</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img src="./images/seat-green-filled.png" alt="" class="w-5 h-5" />
+            <span class="text-green-600">Selected</span>
+          </div>
+        </div>
+
+        <!-- Seat Grid -->
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <div class="mb-4 flex justify-end">
+            <div class="w-20 h-8 bg-gray-300 rounded-md flex items-center justify-center">
+              <img class="w-4 h-4" src="./images/wheel.png" alt="wheel" />
+            </div>
+          </div>
+          <div class="grid grid-cols-4 gap-2 text-center text-sm" id="seatGrid">
+            <!-- Seats will be injected by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Summary -->
+      <div data-aos="fade-left" class="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+        <div class="bg-gray-100 rounded-lg p-4 mb-6">
+          <table class="w-full text-sm">
+            <thead>
+              <tr>
+                <th class="text-left py-2">Seat <img class="w-4 h-4 inline-block" src="./images/seat-gray.png" alt="">
+                </th>
+                <th class="text-left py-2">Class</th>
+                <th class="text-right py-2">Price</th>
+              </tr>
+            </thead>
+            <tbody id="seatSummary">
+              <!-- JS inserts selected seats -->
+            </tbody>
+          </table>
+
+          <div class="mt-4 pt-4 border-t text-sm">
+            <div class="flex justify-between mb-2">
+              <p>Total Price</p>
+              <p>BDT <span id="total-price">0</span></p>
+            </div>
+
+            <div class="bg-white rounded-xl text-center flex items-center p-2 mt-2">
+              <input class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none" type="text"
+                placeholder="Have any coupon?" />
+              <button
+                class="bg-green-500 text-white px-4 py-2 rounded-r-full font-semibold hover:bg-green-600 transition">
+                Apply
+              </button>
+            </div>
+
+            <div class="flex justify-between font-semibold mt-4">
+              <span>Grand Total</span>
+              <span id="grand-total">BDT 0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Passenger Name*</label>
+            <input type="text" placeholder="Enter your name"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number*</label>
+            <input id="phoneNumber" type="tel" placeholder="Enter your phone number"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email ID</label>
+            <input type="email" placeholder="Enter your email"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none" />
+          </div>
+
+          <button id="nextButton"
+            class="w-full text-white py-3 rounded-lg font-medium bg-green-600 cursor-not-allowed opacity-50" disabled>
+            Next
+          </button>
+
+          <div class="flex justify-center space-x-4 text-xs text-gray-500 mt-2">
+            <a href="#" class="hover:text-green-600">Terms & Conditions</a>
+            <a href="#" class="hover:text-green-600">Cancellation Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- full s paribohon section end -->
+  <!-- footer section start-->
+  <footer class="w-full bg-black text-white">
+    <div class="px-4 md:px-10 py-8 md:py-16 max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+        <!-- Left section -->
+        <div class="flex-1 max-w-full md:max-w-md">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4 animate-pulse "><span class="text-green-400 font-bold">Z</span>ippyBus</h2>
+          <p class="text-gray-300 leading-relaxed text-sm md:text-base">
+            we make your journey easy, reliable, and affordable. Skip the lines, save time.
+          </p>
+        </div>
+
+        <!-- Right section -->
+        <div class="flex flex-col items-start lg:items-end w-full lg:w-auto">
+          <p class="text-gray-300 mb-4 ml-2">Download our app</p>
+          <a href="#"
+            class="flex items-center border border-white rounded-lg hover:opacity-80 transition-opacity gap-4 mb-4 px-4 py-2 w-full md:w-auto justify-center md:justify-start">
+            <div>
+              <img src="./images/playstore.png" alt="Get it on Google Play" class="h-8 w-8" />
+            </div>
+            <div>
+              <p class="text-xs">GET IT ON</p>
+              <h1 class="text-lg">Google Play</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section -->
+    <footer>
       <div class="px-4 md:px-6 py-4 md:py-6 max-w-7xl mx-auto">
-        <div
-          class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left"
-        >
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
           <p class="text-gray-400 text-center text-xs md:text-sm">
             @all rights reserved, ZippyBus services limited.2025
           </p>
-          <div
-            class="flex flex-wrap justify-center sm:justify-end gap-4 md:gap-6 text-xs md:text-sm"
-          >
-            <a href="#" class="text-gray-300 hover:text-white transition-colors"
-              >Terms & condition</a
-            >
-            <a href="#" class="text-gray-300 hover:text-white transition-colors"
-              >Return & refund policy</a
-            >
-            <a href="#" class="text-gray-300 hover:text-white transition-colors"
-              >Privacy policy</a
-            >
+          <div  class="flex flex-wrap justify-center sm:justify-end gap-4 md:gap-6 text-xs md:text-sm">
+            <a href="#" class="text-gray-300 hover:text-white transition-colors">Terms & condition</a>
+            <a href="#" class="text-gray-300 hover:text-white transition-colors">Return & refund policy</a>
+            <a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy policy</a>
           </div>
         </div>
       </div>
     </footer>
     <!-- footer section end -->
     <!-- script section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,  // animation সময়
+        once: false      // false দিলে scroll back করলে আবার animation হবে
+      });
+    </script>
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
